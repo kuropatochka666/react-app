@@ -91,22 +91,23 @@ export default function Items({todo, index, colorCat}){
       // }
 
       return (
-        
-        <div className="App" onMouseMove={this._onMouseMove.bind(this)}>
-          {/* {console.log(";jgsdad",this.state.x)} */}
-            <div onClick={ () => this.selectModal('Modal A') }>
-              .
-            </div>
+        <div onClick={this._onMouseMove.bind(this)}>
+            <div className="App" >
+              {/* {console.log(";jgsdad",this.state.x)} */}
+                <div onClick={ () => this.selectModal('Modal A') }>
+                  .
+                </div>
 
-            <Modal 
-              displayModal={this.state.modal}
-              modalInfo={this.state.modalInfo}
-              closeModal={this.selectModal}
-              positionX ={this.state.x}
-              positionY = {this.state.y}
-              
-              
-            />
+                <Modal 
+                  displayModal={this.state.modal}
+                  modalInfo={this.state.modalInfo}
+                  closeModal={this.selectModal}
+                  positionX ={this.state.x}
+                  positionY = {this.state.y}
+
+
+                />
+            <div>       
         </div>
       );
     }
